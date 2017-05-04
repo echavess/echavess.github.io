@@ -1,2 +1,2 @@
-# echavess.github.io
-Personal Website
+# Esteban J. Chaves
+Thank you for visiting my personal website!
