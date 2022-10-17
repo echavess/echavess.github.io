@@ -2,3 +2,7 @@
 remote_theme: benbalter/retlab
 title: Esteban J. Chaves - Seismologist
 description: Personal Website
+
+author:
+  name:           'Esteban J. Chaves'
+  url:            https://twitter.com/SeisCROv
