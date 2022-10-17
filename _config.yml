@@ -1,7 +1,12 @@
+# Base configuration
+
 #theme: Modernist
 remote_theme: benbalter/retlab
 title: Esteban J. Chaves - Seismologist
 description: Personal Website
+
+highlighter: rouge
+permalink: pretty
 
 author:
   name:           'Esteban J. Chaves'
