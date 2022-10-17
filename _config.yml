@@ -1,3 +1,4 @@
-theme: Modernist
+#theme: Modernist
+remote_theme: poole/hyde
 title: Esteban J. Chaves
 description: Seismologist - Costa Rica
