@@ -1,7 +1,6 @@
 # Base configuration
 
-#theme: Modernist
-remote_theme: benbalter/retlab
+theme: Modernist
 title: Esteban J. Chaves - Seismologist
 description: Personal Website
 email: esteban.j.chaves@una.cr
