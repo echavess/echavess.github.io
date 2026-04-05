@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esteban J. Chaves, PhD — Sismólogo, Director de OVSICORI, Universidad Nacional de Costa Rica. Investigación en física de terremotos, zonas de subducción y redes de monitoreo sísmico.">
+  <title>Esteban J. Chaves, PhD | Seismologist · OVSICORI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <svg class="nav-wave-icon" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,12 L8,12 L11,5 L14,19 L17,2 L20,22 L23,8 L26,16 L29,12 L38,12 L41,6 L44,18 L47,3 L50,21 L53,9 L56,15 L60,12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>E.J. Chaves</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Redes Sísmicas</a></li>
+        <li><a href="#publications">Publicaciones</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-seismogram" aria-hidden="true">
+      <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="seismo-line" d="M0,70 L80,70 L90,63 L100,77 L108,60 L115,80 L122,70 L200,70 L210,52 L218,88 L222,35 L226,105 L230,25 L234,108 L238,42 L242,90 L246,62 L250,78 L258,70 L340,70 L348,58 L356,82 L360,46 L364,94 L368,52 L372,84 L376,65 L380,75 L386,70 L450,70 L458,60 L464,80 L468,55 L472,85 L476,70 L540,70 L544,30 L548,110 L551,15 L554,118 L557,18 L560,105 L563,35 L567,88 L570,55 L574,80 L578,68 L582,72 L590,70 L670,70 L678,56 L686,84 L690,44 L694,96 L698,54 L702,82 L706,64 L710,76 L716,70 L800,70 L808,52 L812,88 L815,38 L818,102 L821,45 L824,90 L828,60 L832,80 L836,70 L920,70 L926,62 L932,78 L936,55 L940,85 L944,70 L1020,70 L1026,38 L1029,102 L1032,22 L1035,115 L1038,28 L1041,108 L1044,42 L1048,92 L1052,58 L1056,82 L1060,70 L1140,70 L1148,58 L1154,82 L1158,50 L1162,90 L1166,62 L1170,78 L1174,70 L1240,70 L1248,48 L1252,92 L1255,35 L1258,105 L1261,50 L1264,88 L1268,62 L1272,78 L1276,70 L1440,70"/>
+        <path class="seismo-line seismo-line-2" d="M0,95 L120,95 L128,82 L134,108 L138,70 L142,115 L146,78 L150,105 L154,90 L160,95 L280,95 L286,78 L292,112 L296,65 L300,120 L304,72 L308,110 L312,85 L316,100 L320,95 L440,95 L446,72 L450,115 L453,55 L456,125 L459,62 L462,112 L466,80 L470,105 L474,95 L600,95 L606,80 L612,110 L616,68 L620,118 L624,76 L628,108 L632,88 L636,100 L640,95 L760,95 L766,78 L772,112 L776,62 L780,122 L784,70 L788,115 L792,82 L796,105 L800,95 L920,95 L926,82 L930,108 L934,70 L938,115 L942,80 L946,105 L950,95 L1080,95 L1086,72 L1090,115 L1094,55 L1098,128 L1102,60 L1106,118 L1110,78 L1114,108 L1118,95 L1240,95 L1248,80 L1254,110 L1258,66 L1262,120 L1266,76 L1270,108 L1274,92 L1278,98 L1284,95 L1440,95"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Director, OVSICORI — Universidad Nacional
+      </div>
+      <h1 class="hero-title">
+        Esteban J. Chaves
+        <span class="hero-degree">PhD</span>
+      </h1>
+      <p class="hero-subtitle">Sismólogo · Científico de la Tierra · Comunicador Científico</p>
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Heredia, Costa Rica
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+        <a href="Esteban_s_CV.pdf" class="btn btn-outline" target="_blank" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Descargar CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">Publicaciones</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Redes sísmicas activas</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Sobre mí</span>
+        <h2 class="section-title">Científico. Educador. Investigador.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo fade-in">
+          <div class="photo-frame">
+            <img
+              src="personal_photos/WhatsApp%20Image%202025-07-31%20at%2008.56.23.jpeg"
+              alt="Esteban J. Chaves, PhD — Sismólogo, Director OVSICORI"
+              loading="lazy">
+            <div class="photo-overlay">
+              <div class="photo-tag">
+                <span class="pulse-dot"></span>
+                Director, OVSICORI
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content fade-in">
+          <p class="about-lead">
+            Soy sismólogo y científico de la Tierra con más de 15 años de experiencia investigando la física de los terremotos, las zonas de subducción y el campo sísmico aleatorio.
+          </p>
+          <p class="about-text">
+            Actualmente me desempeño como Director del Observatorio Vulcanológico y Sismológico de Costa Rica (OVSICORI), en la Universidad Nacional, donde también soy Profesor de Ciencias de la Tierra (Profesor II+) e investigador en sismología. Obtuve mi doctorado en la Universidad de California, Santa Cruz (2013–2018) y mi licenciatura en Ciencias Naturales en la Universidad Nacional de Costa Rica.
+          </p>
+          <p class="about-text">
+            Mi trabajo va desde la mecánica de terremotos y fallas, el monitoreo sísmico y geodésico de deslizamientos activos con señales precursoras, hasta el uso de <em>machine learning</em> e inteligencia artificial para la detección y localización de sismos en Costa Rica.
+          </p>
+
+          <div class="research-interests">
+            <h3>Áreas de Investigación</h3>
+            <div class="tags">
+              <span class="tag">Física de Terremotos</span>
+              <span class="tag">Zonas de Subducción</span>
+              <span class="tag">Campo Sísmico Aleatorio</span>
+              <span class="tag">Sismología Forense</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Alerta Temprana</span>
+              <span class="tag">Deslizamientos</span>
+              <span class="tag">Python / Big Data</span>
+              <span class="tag">Comunicación Científica</span>
+            </div>
+          </div>
+
+          <div class="education">
+            <div class="edu-item">
+              <div class="edu-icon">PhD</div>
+              <div class="edu-info">
+                <strong>Doctor of Philosophy — Earth Sciences · Seismology</strong>
+                <span>University of California, Santa Cruz &nbsp;·&nbsp; 2013–2018</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon">B.S.</div>
+              <div class="edu-info">
+                <strong>Licenciatura en Ciencias Naturales</strong>
+                <span>Universidad Nacional de Costa Rica &nbsp;·&nbsp; 2005–2009</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEISMIC NETWORKS ===== -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Redes de Nodos Sísmicos</span>
+        <h2 class="section-title">Proyectos de Monitoreo Sísmico</h2>
+        <p class="section-subtitle">Redes de nodos sísmicos de bajo costo desplegadas en Costa Rica para el monitoreo continuo en tiempo real de la actividad sísmica y geológica.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-image project-image-jcb">
+            <div class="jcb-graphic" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" class="terrain-svg">
+                <path d="M0,120 L40,80 L70,95 L100,55 L130,70 L160,40 L190,60 L200,55 L200,120Z" fill="rgba(0,120,60,0.25)"/>
+                <path d="M0,120 L50,90 L80,105 L110,70 L140,85 L170,55 L200,75 L200,120Z" fill="rgba(0,80,30,0.2)"/>
+                <circle cx="100" cy="55" r="4" fill="rgba(0,212,255,0.9)"/>
+                <circle cx="100" cy="55" r="10" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.5" class="ping-ring"/>
+                <circle cx="100" cy="55" r="18" fill="none" stroke="rgba(0,212,255,0.2)" stroke-width="1" class="ping-ring-2"/>
+                <line x1="30" y1="80" x2="100" y2="55" stroke="rgba(0,212,255,0.25)" stroke-width="1" stroke-dasharray="4,3"/>
+                <line x1="170" y1="55" x2="100" y2="55" stroke="rgba(0,212,255,0.25)" stroke-width="1" stroke-dasharray="4,3"/>
+                <circle cx="30" cy="80" r="2.5" fill="rgba(0,212,255,0.6)"/>
+                <circle cx="170" cy="55" r="2.5" fill="rgba(0,212,255,0.6)"/>
+                <circle cx="55" cy="90" r="2.5" fill="rgba(0,212,255,0.6)"/>
+                <circle cx="145" cy="70" r="2.5" fill="rgba(0,212,255,0.6)"/>
+              </svg>
+            </div>
+            <div class="project-image-overlay">
+              <div class="project-coords"><span class="mono">10.22°N · 84.35°O</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-status active"><span class="pulse-dot green"></span>Activa</span>
+              <span class="project-type">Parque Nacional</span>
+            </div>
+            <h3 class="project-title">P.N. Juan Castro Blanco</h3>
+            <p class="project-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              San Carlos, Alajuela, Costa Rica
+            </p>
+            <p class="project-desc">
+              Red de nodos sísmicos de bajo costo desplegada en el Parque Nacional Juan Castro Blanco. El proyecto permite el monitoreo continuo de la microsismicidad en una de las principales áreas de recarga hídrica del país, caracterizada por complejos sistemas volcánicos y estructuras tectónicas activas en la Cordillera Volcánica Central.
+            </p>
+            <div class="project-specs">
+              <div class="spec">
+                <span class="spec-label">Instrumento</span>
+                <span class="spec-value">Nodos sísmicos</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Entorno</span>
+                <span class="spec-value">Bosque tropical</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Objetivo</span>
+                <span class="spec-value">Microsismicidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Irazú — featured, has photo -->
+        <div class="project-card project-card-featured fade-in">
+          <div class="project-image">
+            <img src="Deslizamiento.JPG" alt="Deslizamiento Volcán Irazú — vista del área de monitoreo sísmico" loading="lazy">
+            <div class="project-image-overlay">
+              <div class="project-coords"><span class="mono">9.98°N · 83.85°O</span></div>
+            </div>
+            <div class="project-featured-badge">Destacado</div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-status active"><span class="pulse-dot green"></span>Activa</span>
+              <span class="project-type">Volcán · Deslizamiento</span>
+            </div>
+            <h3 class="project-title">Deslizamiento Volcán Irazú</h3>
+            <p class="project-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Volcán Irazú, Cartago, Costa Rica
+            </p>
+            <p class="project-desc">
+              Monitoreo sísmico y geodésico del deslizamiento activo en el flanco suroeste del Volcán Irazú. Este proyecto ha generado resultados de alto impacto científico: la detección de señales sísmicas y geodésicas precursoras antes de fallas catastróficas, con un manuscrito en proceso de revisión en la revista <em>Science</em>.
+            </p>
+            <div class="project-specs">
+              <div class="spec">
+                <span class="spec-label">Instrumento</span>
+                <span class="spec-value">Sísmico + GPS</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Entorno</span>
+                <span class="spec-value">Volcánico</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Impacto</span>
+                <span class="spec-value">Science (en revisión)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: San José Centro -->
+        <div class="project-card fade-in">
+          <div class="project-image project-image-sj">
+            <div class="sj-graphic" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" class="city-svg">
+                <rect x="10" y="70" width="18" height="50" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.15)" stroke-width="0.5"/>
+                <rect x="34" y="50" width="22" height="70" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.15)" stroke-width="0.5"/>
+                <rect x="62" y="35" width="26" height="85" fill="rgba(0,212,255,0.09)" stroke="rgba(0,212,255,0.2)" stroke-width="0.5"/>
+                <rect x="94" y="45" width="20" height="75" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.15)" stroke-width="0.5"/>
+                <rect x="120" y="30" width="28" height="90" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.2)" stroke-width="0.5"/>
+                <rect x="154" y="55" width="18" height="65" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.15)" stroke-width="0.5"/>
+                <rect x="178" y="65" width="16" height="55" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.12)" stroke-width="0.5"/>
+                <circle cx="100" cy="60" r="3.5" fill="rgba(0,212,255,0.9)"/>
+                <circle cx="100" cy="60" r="12" fill="none" stroke="rgba(0,212,255,0.35)" stroke-width="1.5" class="ping-ring"/>
+                <circle cx="100" cy="60" r="22" fill="none" stroke="rgba(0,212,255,0.15)" stroke-width="1" class="ping-ring-2"/>
+                <line x1="62" y1="35" x2="100" y2="60" stroke="rgba(0,212,255,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+                <line x1="134" y1="30" x2="100" y2="60" stroke="rgba(0,212,255,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+                <circle cx="62" cy="35" r="2" fill="rgba(0,212,255,0.5)"/>
+                <circle cx="134" cy="30" r="2" fill="rgba(0,212,255,0.5)"/>
+                <circle cx="45" cy="50" r="2" fill="rgba(0,212,255,0.5)"/>
+                <circle cx="163" cy="55" r="2" fill="rgba(0,212,255,0.5)"/>
+              </svg>
+            </div>
+            <div class="project-image-overlay">
+              <div class="project-coords"><span class="mono">9.93°N · 84.08°O</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-status active"><span class="pulse-dot green"></span>Activa</span>
+              <span class="project-type">Red Urbana</span>
+            </div>
+            <h3 class="project-title">San José Centro</h3>
+            <p class="project-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              San José, Costa Rica
+            </p>
+            <p class="project-desc">
+              Red de nodos sísmicos desplegada en el área metropolitana de San José. Permite el monitoreo del ruido sísmico urbano, la caracterización de la estructura cortical bajo la capital y el estudio del efecto de sitio en zonas densamente pobladas con alta vulnerabilidad sísmica.
+            </p>
+            <div class="project-specs">
+              <div class="spec">
+                <span class="spec-label">Instrumento</span>
+                <span class="spec-value">Nodos sísmicos</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Entorno</span>
+                <span class="spec-value">Urbano</span>
+              </div>
+              <div class="spec">
+                <span class="spec-label">Objetivo</span>
+                <span class="spec-value">Efecto de sitio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Publicaciones Seleccionadas</span>
+        <h2 class="section-title">Contribuciones Científicas</h2>
+      </div>
+
+      <div class="publications-list">
+
+        <div class="pub-item pub-highlight fade-in">
+          <div class="pub-year mono">2024</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-science">Science</span>
+            <p class="pub-title">Svennevig, K., Hicks, S.P., Forbriger, T., <strong>Chaves, E.J.</strong>, et al. A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days.</p>
+            <p class="pub-details">Science, 385, 1196–1205. &nbsp;<a href="https://doi.org/10.1126/science.adm9247" target="_blank" rel="noopener" class="pub-doi">10.1126/science.adm9247</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item pub-highlight fade-in">
+          <div class="pub-year mono">2025</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-science">Science &mdash; en revisión</span>
+            <p class="pub-title"><strong>Chaves, E.J.</strong>, Müller, C., Finnegan, N., Schwartz, S., &amp; Brodsky, E.E. When does the catastrophic failure of a landslide become predictable? Precursory seismic and geodetic signals before two landslides at Irazú Volcano, Costa Rica.</p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2026</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-tsr">The Seismic Record</span>
+            <p class="pub-title">Hajaji, S., <strong>Chaves, E.J.</strong> Dynamic Triggering of Earthquakes in Costa Rica.</p>
+            <p class="pub-details">The Seismic Record, 6(1): 65–75. &nbsp;<a href="https://doi.org/10.1785/0320250050" target="_blank" rel="noopener" class="pub-doi">10.1785/0320250050</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2025</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-cg">Computers &amp; Geosciences</span>
+            <p class="pub-title">Gamboa-Chacón, S., Meneses, E., <strong>Chaves, E.J.</strong> Analysis of earthquake detection using deep learning: Evaluating reliability and uncertainty in prediction methods.</p>
+            <p class="pub-details">Computers &amp; Geosciences, 197, 105877. &nbsp;<a href="https://doi.org/10.1016/j.cageo.2025.105877" target="_blank" rel="noopener" class="pub-doi">10.1016/j.cageo.2025.105877</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2020</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-sa">Science Advances</span>
+            <p class="pub-title"><strong>Chaves, J.E.</strong>, Schwartz, S.Y. and Abercrombie, R.E. Repeating Earthquakes Record Fault Weakening and Healing in Areas of Megathrust Postseismic Slip.</p>
+            <p class="pub-details">Science Advances. &nbsp;<a href="https://doi.org/10.1126/sciadv.aaz9317" target="_blank" rel="noopener" class="pub-doi">10.1126/sciadv.aaz9317</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2022</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-tsr">The Seismic Record</span>
+            <p class="pub-title">Gibbons, S.J., <strong>Chaves, E.J.</strong>, Fisk, M. The 27 February 2022 Lop Nor Earthquake: Detectability, Location, and Discrimination.</p>
+            <p class="pub-details">The Seismic Record, 2(2), 137–147. &nbsp;<a href="https://doi.org/10.1785/0320220018" target="_blank" rel="noopener" class="pub-doi">10.1785/0320220018</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2021</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-agu">AGU Advances</span>
+            <p class="pub-title">Brooks, B.A., Protti, M., …, <strong>Chaves, E.J.</strong>, et al. Robust Earthquake Early Warning at a Fraction of the Cost: ASTUTI Costa Rica.</p>
+            <p class="pub-details">AGU Advances, 2. &nbsp;<a href="https://doi.org/10.1029/2021AV000407" target="_blank" rel="noopener" class="pub-doi">10.1029/2021AV000407</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2019</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-jgr">JGR</span>
+            <p class="pub-title">Voytan, D.P., Lay, T., <strong>Chaves, E.J.</strong>, Ohman, J.T. Yield Estimates for the Six North Korean Nuclear Tests from Teleseismic P Wave Modeling.</p>
+            <p class="pub-details">Journal of Geophysical Research. &nbsp;<a href="https://doi.org/10.1029/2019JB017418" target="_blank" rel="noopener" class="pub-doi">10.1029/2019JB017418</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2018</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-jgr">GRL</span>
+            <p class="pub-title"><strong>Chaves, E.J.</strong>, Lay, T., &amp; Voytan, D.P. Yield estimate (230 kt) for a Mueller-Murphy model of the 3 September 2017 North Korean nuclear test from teleseismic broadband P waves.</p>
+            <p class="pub-details">Geophysical Research Letters, 45. &nbsp;<a href="https://doi.org/10.1029/2018GL079343" target="_blank" rel="noopener" class="pub-doi">10.1029/2018GL079343</a></p>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in">
+          <div class="pub-year mono">2016</div>
+          <div class="pub-content">
+            <span class="journal-badge journal-sa">Science Advances</span>
+            <p class="pub-title"><strong>Chaves, J.E.</strong>, Schwartz, S.Y. Monitoring transient changes within overpressured regions of subduction zones using ambient seismic noise.</p>
+            <p class="pub-details">Science Advances, 2(1). &nbsp;<a href="https://doi.org/10.1126/sciadv.1501289" target="_blank" rel="noopener" class="pub-doi">10.1126/sciadv.1501289</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pub-cta">
+        <a href="Esteban_s_CV.pdf" class="btn btn-outline" target="_blank" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Ver lista completa en CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS ===== -->
+  <section class="section section-dark awards-section">
+    <div class="container">
+      <div class="awards-grid">
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>NSF Antarctica Service Medal</strong>
+            <span>National Science Foundation &nbsp;·&nbsp; 2014–2016</span>
+          </div>
+        </div>
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>IASPEI-LACSC Early Career Award</strong>
+            <span>International Seismological Association &nbsp;·&nbsp; 2018</span>
+          </div>
+        </div>
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>Zhen and Ren Wu Memorial Award in Geophysics</strong>
+            <span>University of California, Santa Cruz &nbsp;·&nbsp; 2015</span>
+          </div>
+        </div>
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>Presidente, LACSC (2022–2024)</strong>
+            <span>Latin American and Caribbean Seismological Commission</span>
+          </div>
+        </div>
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>Board of Directors, SSA</strong>
+            <span>Seismological Society of America &nbsp;·&nbsp; 2026</span>
+          </div>
+        </div>
+        <div class="award-item fade-in">
+          <div class="award-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div class="award-content">
+            <strong>COCONET Award</strong>
+            <span>UNAVCO, COCONET &nbsp;·&nbsp; 2013, 2014, 2015</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Contacto</span>
+        <h2 class="section-title">Conectemos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:esteban.j.chaves@una.ac.cr" class="contact-value">esteban.j.chaves@una.ac.cr</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Teléfono</span>
+              <span class="contact-value">(+506) 8959-7666</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Institución</span>
+              <span class="contact-value">OVSICORI, Universidad Nacional<br>Heredia, Costa Rica</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cv fade-in">
+          <div class="cv-card">
+            <div class="cv-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14,2H6C4.9,2 4,2.9 4,4v16c0,1.1 0.9,2 2,2h12c1.1,0 2-0.9 2-2V8L14,2z M16,18H8v-2h8V18z M16,14H8v-2h8V14z M13,9V3.5L18.5,9H13z"/></svg>
+            </div>
+            <h3>Curriculum Vitae</h3>
+            <p>Descarga mi CV completo con publicaciones, proyectos, experiencia académica y reconocimientos.</p>
+            <a href="Esteban_s_CV.pdf" class="btn btn-primary" target="_blank" download>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              Descargar CV (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-seismo" aria-hidden="true">
+        <svg viewBox="0 0 600 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,15 L50,15 L55,10 L58,20 L60,8 L62,22 L64,12 L66,18 L70,15 L120,15 L124,8 L127,22 L129,5 L131,25 L133,10 L135,20 L138,15 L200,15 L204,10 L207,20 L209,7 L211,23 L213,12 L215,18 L220,15 L280,15 L283,9 L286,21 L288,5 L290,25 L292,10 L294,20 L298,15 L360,15 L363,10 L366,20 L368,7 L370,23 L372,12 L374,18 L378,15 L440,15 L443,9 L446,21 L448,6 L450,24 L452,11 L454,19 L458,15 L520,15 L523,10 L526,20 L528,7 L530,23 L532,12 L534,18 L538,15 L600,15" fill="none" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="nav-wave-icon" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,12 L8,12 L11,5 L14,19 L17,2 L20,22 L23,8 L26,16 L29,12 L38,12 L41,6 L44,18 L47,3 L50,21 L53,9 L56,15 L60,12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Esteban J. Chaves, PhD</span>
+        </div>
+        <p class="footer-text">Director, OVSICORI &nbsp;·&nbsp; Universidad Nacional de Costa Rica</p>
+        <p class="footer-copy">&copy; 2025 Esteban J. Chaves. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Smooth scroll & close mobile menu
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          navLinks.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Intersection Observer — fade-in on scroll
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach((el, i) => {
+      el.style.transitionDelay = `${(i % 4) * 80}ms`;
+      fadeObserver.observe(el);
+    });
+  </script>
+</body>
+</html>
