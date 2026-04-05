@@ -669,6 +669,126 @@ a { text-decoration: none; color: inherit; }
 .pub-cta { text-align: center; margin-top: 2.5rem; }
 
 /* =============================================
+   FORENSIC & NUCLEAR SEISMOLOGY
+   ============================================= */
+.forensic-subsection { margin-bottom: 4.5rem; }
+.forensic-subsection:last-child { margin-bottom: 0; }
+
+.subsection-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.subsection-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.subsection-icon svg { width: 24px; height: 24px; }
+.subsection-icon-nuclear {
+  background: rgba(255, 100, 60, 0.12);
+  border: 1px solid rgba(255, 100, 60, 0.3);
+  color: #ff7a50;
+}
+.subsection-icon-forensic {
+  background: rgba(140, 100, 255, 0.12);
+  border: 1px solid rgba(140, 100, 255, 0.3);
+  color: #b080ff;
+}
+.subsection-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
+}
+.subsection-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 700px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.research-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.research-card:hover {
+  border-color: rgba(0,212,255,0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.research-card-featured {
+  border-color: rgba(220, 60, 60, 0.2);
+  box-shadow: 0 0 30px rgba(220,60,60,0.05);
+}
+.research-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.research-country {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.research-flag { font-size: 1rem; line-height: 1; }
+.research-title {
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+.research-desc {
+  font-size: 0.845rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  flex: 1;
+}
+.research-desc strong { color: var(--text-primary); font-weight: 600; }
+.research-desc em { font-style: italic; }
+.research-significance {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  border-left: 2px solid rgba(0,212,255,0.3);
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  transition: opacity 0.2s;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+.research-link:hover { opacity: 0.65; }
+
+/* =============================================
    AWARDS
    ============================================= */
 .awards-section { padding: 4rem 0; }
@@ -803,8 +923,9 @@ a.contact-value:hover { color: var(--accent-cyan); }
    RESPONSIVE — Tablet
    ============================================= */
 @media (max-width: 1100px) {
-  .projects-grid { grid-template-columns: 1fr; max-width: 580px; margin: 0 auto; }
-  .awards-grid   { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid  { grid-template-columns: 1fr; max-width: 580px; margin: 0 auto; }
+  .research-grid  { grid-template-columns: 1fr; }
+  .awards-grid    { grid-template-columns: repeat(2, 1fr); }
   .about-grid    { grid-template-columns: 1fr; gap: 3rem; }
   .about-photo   { max-width: 340px; margin: 0 auto; }
 }
